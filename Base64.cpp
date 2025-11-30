@@ -81,36 +81,23 @@ int main(){
     std:: cout << "Type 'E' to Encode or 'D' to Decode text: ";
     std:: cin >> choice;
 
-    /*if(choice == "E" || choice == "e"){
-
-    }else if(choice =="D" || choice == "d"){
-
-    }else{
-        std:: cout << "Invalid choice. Please type E or D"
-    }*/
-
-    while(true){
-
     if(choice == "E" || choice == "e"){
 
         //Print encoded text.
         std:: string encodedText = base64_encode(text);
         std:: cout <<"Text encoded is: " << encodedText << std::endl;
-        break;
 
     }else if(choice =="D" || choice == "d"){
 
         //Print decoded text.
         std:: string decodedString = base64_decode(text);
         std:: cout <<"Text decoded is: " << decodedString << std::endl;
-        break;
 
     }else{
-
+        //Invalid choice message.
         std:: cout << "Invalid choice. Please type E or D" <<std:: endl;
         
     }
-}
 
 //Prevent console from closing immediately.
 std::cout << "Press Enter to exit...";
