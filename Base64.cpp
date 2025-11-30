@@ -107,12 +107,15 @@ int main(){
 
     }else{
 
-        //Program will keep asking for valid input until user types E or D.
-        std:: cout << "Invalid choice. Please type E or D";
-
+        std:: cout << "Invalid choice. Please type E or D" <<std:: endl;
+        
     }
-    }
+}
 
+//Prevent console from closing immediately.
+std::cout << "Press Enter to exit...";
+std::cin.ignore();  
+std::cin.get(); 
 
-    std::cin.get();
+return 0;
 }
